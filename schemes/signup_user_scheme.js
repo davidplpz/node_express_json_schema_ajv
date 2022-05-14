@@ -14,6 +14,7 @@ const signupScheme = {
       description: "User password",
       type: "string",
       format: "password",
+      minLength: 8,
     },
   },
   required: ["email", "password"],
