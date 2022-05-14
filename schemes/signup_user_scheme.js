@@ -1,7 +1,7 @@
 import SchemeValidator from "../scheme-validator.js";
 
 const signupScheme = {
-  title: "Register User",
+  title: "Signup User",
   description: "User data for registration",
   type: "object",
   properties: {
