@@ -1,12 +1,12 @@
-import express from 'express';
-import UserController from '../controllers/userController.js';
-import RequestValidator from '../middleware/request-validator.js';
-import RegisterUserScheme from '../schemes/register_user_scheme.js';
+import express from "express";
+import UserController from "../controllers/userController.js";
+import RequestValidator from "../middleware/request-validator.js";
+import RegisterUserScheme from "../schemes/register_user_scheme.js";
 
 const router = express.Router();
 
 router.post(
-  '/signup',
+  "/signup",
   RequestValidator(RegisterUserScheme),
   UserController.signup
 );

@@ -1,6 +1,6 @@
 class userController {
   signup = (request, response, next) => {
-    response.json('User signup completed');
+    response.json("User signup completed");
   };
 }
 
