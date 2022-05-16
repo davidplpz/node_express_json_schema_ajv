@@ -16,6 +16,23 @@ const signupScheme = {
       format: "password",
       minLength: 8,
     },
+    user_data: {
+      type: "object",
+      properties: {
+        name: { type: "string" },
+        address: {
+          type: "object",
+          properties: {
+            type: { enum: ["Street", "Avenue", "Boulevard"] },
+            name: { type: "string" },
+          },
+        },
+        phone: {
+          type: "string",
+        },
+      },
+      required: ["name", "address", "phone"],
+    },
   },
   required: ["email", "password"],
 };
