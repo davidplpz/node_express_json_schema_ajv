@@ -1,6 +1,7 @@
 import SchemeValidator from "../scheme-validator.js";
 
 const signupScheme = {
+  $schema: "https://json-schema.org/draft/2020-12/schema",
   title: "Signup User",
   description: "User data for registration",
   type: "object",
