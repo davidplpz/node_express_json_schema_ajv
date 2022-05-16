@@ -1,101 +1,117 @@
 {
-  "info": {
-    "_postman_id": "49e46afa-c8da-44cd-ae30-197566ee89f5",
-    "name": "JSONScheme",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "01_signup_without_user_data",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"dperez@secture.com\",\n    \"password\": \"12345678\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:3000/signup",
-          "host": ["localhost"],
-          "port": "3000",
-          "path": ["signup"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "02_signup",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"asdf1234\",\n    \"user_data\": {\n        \"name\": \"Test\",\n        \"address\": {\n            \"type\": \"Avenue\",\n            \"name\": \"Inventada\"\n        },\n        \"phone\": \"678123465\"\n    }\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:3000/signup",
-          "host": ["localhost"],
-          "port": "3000",
-          "path": ["signup"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "03_sigunp_with_additional_properties",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"asdf1234\",\n    \"user_data\": {\n        \"name\": \"Test\",\n        \"address\": {\n            \"type\": \"Avenue\",\n            \"name\": \"Inventada\",\n            \"otro\": \"asdf\"\n        },\n        \"phone\": \"678123465\"\n    }\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:3000/signup",
-          "host": ["localhost"],
-          "port": "3000",
-          "path": ["signup"]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "pay",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"amount\": 11.3,\n    \"at\": \"2022-10-21\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:3000/pay",
-          "host": ["localhost"],
-          "port": "3000",
-          "path": ["pay"]
-        }
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "49e46afa-c8da-44cd-ae30-197566ee89f5",
+		"name": "JSONScheme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01_signup_without_user_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"dperez@secture.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"asdf1234\",\n    \"user_data\": {\n        \"name\": \"Test\",\n        \"address\": {\n            \"type\": \"Avenue\",\n            \"name\": \"Inventada\"\n        },\n        \"phone\": \"678123465\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_sigunp_with_additional_properties",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"asdf1234\",\n    \"user_data\": {\n        \"name\": \"Test\",\n        \"address\": {\n            \"type\": \"Avenue\",\n            \"name\": \"Inventada\",\n            \"otro\": \"asdf\"\n        },\n        \"phone\": \"678123465\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 11.3,\n    \"at\": \"2022-10-21\",\n    \"product\": {\n        \"id\": \"eabbd33e-dd2d-4625-9c08-fe12a758b75f\",\n        \"name\": \"Aguacate\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/pay",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
