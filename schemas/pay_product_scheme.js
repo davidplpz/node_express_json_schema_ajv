@@ -1,7 +1,8 @@
 import SchemeValidator from "../scheme-validator.js";
+import { productSchema } from "./product_schema.js";
 
 const payScheme = {
-  $schema: "https://json-schema.org/draft/2020-12/schema",
+  $id: "pay",
   title: "Pay the product",
   description: "Amount to make a payment",
   type: "object",
@@ -17,8 +18,9 @@ const payScheme = {
       type: "string",
       format: "date",
     },
+    product: { $ref: "product" },
   },
-  required: ["amount", "at"],
+  required: ["amount", "at", "product"],
 };
 
 const payValidator = SchemeValidator.compile(payScheme);
