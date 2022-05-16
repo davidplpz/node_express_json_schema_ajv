@@ -34,7 +34,7 @@ const signupScheme = {
       required: ["name", "address", "phone"],
     },
   },
-  required: ["email", "password"],
+  required: ["email", "password", "user_data"],
 };
 
 const signupValidator = SchemeValidator.compile(signupScheme);
