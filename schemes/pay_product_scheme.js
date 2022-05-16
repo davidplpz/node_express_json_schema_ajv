@@ -1,6 +1,7 @@
 import SchemeValidator from "../scheme-validator.js";
 
 const payScheme = {
+  $schema: "https://json-schema.org/draft/2020-12/schema",
   title: "Pay the product",
   description: "Amount to make a payment",
   type: "object",
