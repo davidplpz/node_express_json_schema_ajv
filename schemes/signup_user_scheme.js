@@ -26,6 +26,7 @@ const signupScheme = {
             type: { enum: ["Street", "Avenue", "Boulevard"] },
             name: { type: "string" },
           },
+          additionalProperties: false,
         },
         phone: {
           type: "string",
